@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MadGroup</string>
+    <string name="Pname">Patient Name</string>
+    <string name="CntctNo">Contact Number</string>
+    <string name="email">E-mail</string>
+    <string name="NIC">NIC No</string>
+    <string name="chemName">Chemist Name</string>
+    <string name="regNo">Registration No</string>
+    <string name="labName">Laboratory Name</string>
+    <string name="pw">Password</string>
+</resources>
