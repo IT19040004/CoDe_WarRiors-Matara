@@ -63,6 +63,11 @@ public class FirstPage extends AppCompatActivity {
         //set animated text
         animatedText("MED CARE");
 
+        //GIF
+        Glide.with(this).load("https://firebasestorage.googleapis.com/v0/b/demoapp-ae96a.appspot.com/o/heart_beat.gif?alt=media&token=b21dddd8-782c-457c-babd-f2e922ba172b")
+                .asGif()
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .into(ivbeat);
 
 
         new Handler().postDelayed(new Runnable() {
