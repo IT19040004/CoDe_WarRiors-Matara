@@ -61,6 +61,14 @@ public class LabChemistList extends AppCompatActivity {
             }
         });
 
+        previosLabApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seePreviousLabApp();
+            }
+        });
+
+
 
     }
 
@@ -68,6 +76,12 @@ public class LabChemistList extends AppCompatActivity {
         Intent intent = new Intent(this, LabChemAppointment.class);
         startActivity(intent);
     }
+
+    public void seePreviousLabApp(){
+        Intent intent = new Intent(this, MyLabBookings.class);
+        startActivity(intent);
+    }
+
 
 
 }
