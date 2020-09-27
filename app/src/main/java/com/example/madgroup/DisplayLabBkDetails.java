@@ -82,7 +82,40 @@ public class DisplayLabBkDetails extends AppCompatActivity {
             }
         });
 
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Appointmentlab aLab = new Appointmentlab();
+                aLab.setPatientName(namePatient.getText().toString());
+                aLab.setChemId(Integer.parseInt(chemId.getText().toString()));
+                aLab.setDate(date.getText().toString());
+                aLab.setTime(time.getText().toString());
+                aLab.setEmail(email.getText().toString());
+                aLab.setContactNumber(Integer.parseInt(contactNumb.getText().toString()));
 
+                new FirebaseDatabaseHelper().updateLabApp(key, aLab, new FirebaseDatabaseHelper.DataStatus() {
+                    @Override
+                    public void DataIsLoaded(List<Appointmentlab> appointmentlabs, List<String> keys) {
+
+                    }
+
+                    @Override
+                    public void DataIsInserted() {
+
+                    }
+
+                    @Override
+                    public void DataIsUpdated() {
+                        Toast.makeText(DisplayLabBkDetails.this, "Lab Appoinment Updated Successfully", Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void DataIsDeleted() {
+
+                    }
+                });
+            }
+        });
 
     }
 
