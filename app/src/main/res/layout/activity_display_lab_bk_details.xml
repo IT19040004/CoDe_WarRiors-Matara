@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayLabBkDetails"
+    >
+
+
+    <TextView
+        android:id="@+id/txtLabApp"
+        android:layout_width="350sp"
+        android:layout_height="45sp"
+        android:background="@color/buttonTextColour"
+        android:gravity="center_horizontal"
+        android:text=" Booking Details of Patient"
+        android:textAlignment="center"
+        android:textColor="@color/captions"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <EditText
+        android:id="@+id/etxtPnameShowDetails"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint=" Enter Patient Name..."
+        android:inputType="textPersonName"
+        android:textColor="#022267"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <EditText
+        android:id="@+id/etxtEmailAddressShowDetails"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter E-mail(abc@gmail.com)"
+        android:inputType="textEmailAddress"
+        android:textColor="#022267"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="119dp"
+        android:layout_height="47dp"
+        android:background="@color/buttonBackground"
+        android:text="Update"
+        android:textColor="@color/buttonTextColour"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <EditText
+        android:id="@+id/edtTextLabChemIdShowDetails"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint=" Enter Selected Lab Chemist ID..."
+        android:inputType="number"
+        android:textColor="#022267"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <EditText
+        android:id="@+id/editTextPhoneShowDetails"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:ems="10"
+        android:hint="Enter Contact Number"
+        android:inputType="phone"
+        android:textColor="#022267"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtEmailAddress"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <Button
+        android:id="@+id/btnDatePickerShowDetails"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@color/formTxtBackground"
+        android:gravity="center_horizontal"
+        android:text="Appoinment Date"
+        android:textAlignment="center"
+        android:textColor="@color/formTxtColour"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnTimePickerShowDetails"
+        android:layout_width="130dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="232dp"
+        android:background="@color/formTxtBackground"
+        android:text="Select Time"
+        android:textColor="@color/formTxtColour"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDatePicker" />
+
+    <EditText
+        android:id="@+id/edtextdatePickerShowDetails"
+        android:layout_width="222dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint=" Select a Date"
+        android:inputType="textPersonName"
+        android:textColor="#022267"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.467" />
+
+    <EditText
+        android:id="@+id/edttxtTimePickerShowDetails"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="232dp"
+        android:ems="10"
+        android:hint=" Select Time"
+        android:inputType="textPersonName"
+        android:textColor="#022267"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtextdatePicker" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="119dp"
+        android:layout_height="47dp"
+        android:background="@color/buttonBackground"
+        android:text="Delete"
+        android:textColor="@color/buttonTextColour"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
