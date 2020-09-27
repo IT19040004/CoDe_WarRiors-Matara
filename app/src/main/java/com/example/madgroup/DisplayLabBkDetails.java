@@ -117,6 +117,36 @@ public class DisplayLabBkDetails extends AppCompatActivity {
             }
         });
 
+        //delete operation
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new FirebaseDatabaseHelper().deleteLabApp(key, new FirebaseDatabaseHelper.DataStatus() {
+                    @Override
+                    public void DataIsLoaded(List<Appointmentlab> appointmentlabs, List<String> keys) {
+
+                    }
+
+                    @Override
+                    public void DataIsInserted() {
+
+                    }
+
+                    @Override
+                    public void DataIsUpdated() {
+
+                    }
+
+                    @Override
+                    public void DataIsDeleted() {
+                        Toast.makeText(DisplayLabBkDetails.this, "Lab Appoinment Sccessfully Deleted..", Toast.LENGTH_SHORT).show();
+                        finish();
+                        return;
+                    }
+                });
+            }
+        });
+
     }
 
 
