@@ -22,7 +22,7 @@ public class Pharmacy_List extends AppCompatActivity {
         setContentView(R.layout.activity_pharmacy__list);
 
         lv =(ListView) findViewById(R.id.listviewnn);
-        String values[] ={"P001 - Supipi - Supipi,Matara", "P002 - Asiri - Asiri,Nupe,Matara","P003 - Samahan - Samahan,Maradana", "P004 - Sithara - Sithara,Galle"};
+        String values[] ={"P001 - Supipi - Supipi,Matara", "P002 - Asiri - Asiri,Nupe,Matara","P003 - Samahan - Samahan,Maradana", "P004 - Sithara - Sithara,Galle","P005 - J and K Pharmacy - JK,Kaluthra","P001 - Ananda Pharmacy - Kamburugamuwa,Matara"};
 
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, Arrays.asList(values));
