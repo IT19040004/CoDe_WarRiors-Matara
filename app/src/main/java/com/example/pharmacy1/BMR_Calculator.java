@@ -48,8 +48,12 @@ public class BMR_Calculator extends AppCompatActivity {
                 String menweight=Mw.getText().toString();
                 String menage=Mage.getText().toString();
 
+               float Mheight=Float.parseFloat(menheight);
+               float Mweight=Float.parseFloat(menweight);
+               float Mage=Float.parseFloat(menage);
+
                 float BMRmen;
-                BMRmen=calMenBMR(menheight,menweight,menage);
+                BMRmen=calMenBMR(Mheight,Mweight,Mage);
                 finM.setText(String.valueOf(BMRmen));
 
             }
@@ -77,11 +81,11 @@ public class BMR_Calculator extends AppCompatActivity {
             }
         });
     }
-    protected float calMenBMR(String menheight,String menweight,String menage)
+    protected Float calMenBMR(Float Mheight,Float Mweight,Float Mage)
     {   float value=0;
-        float Mheight=Float.parseFloat(menheight);
-        float Mweight=Float.parseFloat(menweight);
-        float Mage=Float.parseFloat(menage);
+       // float Mheight=Float.parseFloat(menheight);
+        //float Mweight=Float.parseFloat(menweight);
+        //float Mage=Float.parseFloat(menage);
          value= (float) (66.47+(13.75 * Mweight)+(5.003 * Mheight)-(6.77 * Mage));
 
         return value;

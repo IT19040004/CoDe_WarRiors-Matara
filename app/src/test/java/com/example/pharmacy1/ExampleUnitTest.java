@@ -1,5 +1,6 @@
 package com.example.pharmacy1;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -10,8 +11,18 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
+
+    private BMR_Calculator calculateBMR;
+
+    @Before
+    public void setup(){
+        calculateBMR = new BMR_Calculator();
+
+    }
+
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void testMenBMR(){
+        float value = calculateBMR.calMenBMR(165f,78f,28f);
+        assertEquals(1774.905f,value,0.0001);
     }
 }
