@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.madgroup">
-    
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,24 +11,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DisplayLabBkDetails"></activity>
+        <activity android:name=".Order_List"></activity>
+        <activity android:name=".place_pharmacy_order" />
+        <activity android:name=".Pharmacy_List" />
+        <activity android:name=".Update_Pharmacy_order" />
+        <activity android:name=".BMR_Calculator" />
+        <activity android:name=".Create_Customer_Account" />
+        <activity android:name=".doctor__appointment" />
+        <activity android:name=".customerHome" />
+        <activity android:name=".Customer_Profile" />
+        <activity android:name=".Doctor_List" />
+        <activity android:name=".DisplayLabBkDetails" />
         <activity android:name=".LabChemistList" />
         <activity android:name=".MyLabBookings" />
         <activity android:name=".HealthCal" />
         <activity android:name=".PatientHome" />
         <activity android:name=".LabChemAppointment" />
         <activity android:name=".BMIcalculate" />
-        <activity android:name=".FirstPage" >
+        <activity android:name=".FirstPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

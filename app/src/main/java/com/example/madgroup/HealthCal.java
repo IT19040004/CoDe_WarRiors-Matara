@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class HealthCal extends AppCompatActivity {
 
-    private Button btn;
+    private Button btn,btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +23,21 @@ public class HealthCal extends AppCompatActivity {
                 openBMIcalculation();
             }
         });
+        btn2=findViewById(R.id.btnBMR);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openBMRcalculattion();
+            }
+        });
     }
 
     public void openBMIcalculation(){
         Intent intent = new Intent(this, BMIcalculate.class);
+        startActivity(intent);
+    }
+    public void openBMRcalculattion(){
+        Intent intent = new Intent(this, BMR_Calculator.class);
         startActivity(intent);
     }
 }

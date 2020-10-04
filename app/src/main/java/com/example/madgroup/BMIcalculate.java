@@ -33,7 +33,9 @@ public class BMIcalculate extends AppCompatActivity {
         btnCalc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              calcBMI();
+                Float weight,height;
+                Float result = calcBMI( Float.parseFloat(edtWeight.getText().toString()),Float.parseFloat(edtHeight.getText().toString()));
+                resultBmi.setText(String.valueOf(result));
             }
 
 
@@ -41,16 +43,10 @@ public class BMIcalculate extends AppCompatActivity {
     }
 
     //BMI calculate
-    public void calcBMI(){
+    protected float calcBMI(Float weight, Float height){
 
 
-
-       Float weight = Float.parseFloat(edtWeight.getText().toString());
-       Float height=Float.parseFloat(edtHeight.getText().toString());
-
-        Float result = weight/(height * height);
-
-        resultBmi.setText(String.valueOf(result));
+        float result = weight/(height * height);
 
 
         if(result>=25.0){
@@ -60,8 +56,9 @@ public class BMIcalculate extends AppCompatActivity {
             BMIvalue.setText("...Thin...");
         }
         else{
-            BMIvalue.setText("Healthy Weight");
+          BMIvalue.setText("Healthy Weight");
         }
+        return result;
     }
 
 

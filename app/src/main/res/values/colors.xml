@@ -10,4 +10,9 @@
     <color name="formTxtBackground">#D3C3E6</color>
     <color name="formTxtColour">#120327</color>
     <color name="logBackground">#091A59</color>
+    <color name="colorWhite">#FFFF</color>
+    <color name="colorSteelBlue">#4682B4</color>
+    <color name="colorsilver">#C0C0C0</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorMaroon">#800000</color>
 </resources>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MyLabBookings"
-
+    android:background="@drawable/whiteback"
     >
 
 
@@ -13,11 +13,10 @@
         android:id="@+id/textView"
         android:layout_width="380sp"
         android:layout_height="30sp"
-        android:background="#650C25"
         android:gravity="center_horizontal"
         android:text="My Lab Bookings"
         android:textAlignment="center"
-        android:textColor="@color/design_default_color_background"
+        android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,13 +24,13 @@
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.051" />
 
     <Button
         android:id="@+id/btnAddLabApp"
         android:layout_width="65dp"
         android:layout_height="60dp"
-        android:background="#3A0606"
+        android:background="@drawable/custom_button"
         android:gravity="center_horizontal"
         android:text="Add New"
         android:textAlignment="center"
@@ -47,8 +46,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="387dp"
-        android:layout_height="462dp"
+        android:layout_width="402dp"
+        android:layout_height="450dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginEnd="1dp"

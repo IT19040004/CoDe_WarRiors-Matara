@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PatientHome">
+    tools:context=".PatientHome"
+    android:background="@drawable/whiteback">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -24,10 +25,9 @@
         android:id="@+id/textView"
         android:layout_width="367dp"
         android:layout_height="45dp"
-        android:background="#650C25"
         android:text="Select Service Category you need"
         android:textAlignment="center"
-        android:textColor="@color/design_default_color_background"
+        android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,15 +52,16 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.722" />
+        app:layout_constraintVertical_bias="0.722"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/btnDoc"
         android:layout_width="160dp"
         android:layout_height="140dp"
-        android:background="#3A0606"
+        android:background="@drawable/custom_button"
         android:text="Doctor"
-        android:textColor="@color/design_default_color_background"
+        android:textColor="#FFFFFF"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,15 +69,15 @@
         app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintVertical_bias="0.558" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="160sp"
         android:layout_height="140sp"
-        android:background="#3A0606"
+        android:background="@drawable/custom_button"
         android:text="Pharmacy"
-        android:textColor="@color/design_default_color_background"
+        android:textColor="#FFFFFF"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,15 +85,15 @@
         app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintVertical_bias="0.558" />
 
     <Button
         android:id="@+id/btnLab"
         android:layout_width="160sp"
         android:layout_height="140sp"
-        android:background="#3A0606"
+        android:background="@drawable/custom_button"
         android:text="Laboratory"
-        android:textColor="@color/design_default_color_background"
+        android:textColor="#FFFFFF"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -100,15 +101,16 @@
         app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.972" />
+        app:layout_constraintVertical_bias="0.95" />
 
     <Button
         android:id="@+id/btnCal"
         android:layout_width="160sp"
         android:layout_height="140sp"
-        android:background="#3A0606"
+
+        android:background="@drawable/custom_button"
         android:text="Health Calculator"
-        android:textColor="@color/design_default_color_background"
+        android:textColor="#FFFFFF"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -116,6 +118,6 @@
         app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.972" />
+        app:layout_constraintVertical_bias="0.95" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

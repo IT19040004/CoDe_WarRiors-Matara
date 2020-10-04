@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HealthCal"
+    android:background="@drawable/whiteback"
     >
 
     <TextView
@@ -53,45 +54,32 @@
         android:id="@+id/btnCalBMI"
         android:layout_width="250sp"
         android:layout_height="68sp"
-        android:background="#350202"
+
         android:text="Body Mass Index(BMI)"
-        android:textColor="@color/design_default_color_background"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
+
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintVertical_bias="0.466" />
 
     <Button
         android:id="@+id/btnBMR"
         android:layout_width="250sp"
         android:layout_height="68sp"
-        android:background="#350202"
         android:text="Basal Metabolic Rate(BMR)"
-        android:textColor="@color/design_default_color_background"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535" />
-
-    <Button
-        android:id="@+id/btnFat"
-        android:layout_width="250sp"
-        android:layout_height="68sp"
-        android:background="#350202"
-        android:text="Body Fat Percentage"
-        android:textColor="@color/design_default_color_background"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintVertical_bias="0.684" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
