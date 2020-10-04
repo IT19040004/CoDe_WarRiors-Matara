@@ -29,7 +29,7 @@
         android:layout_width="100sp"
         android:layout_height="30sp"
         android:background="@color/formTxtBackground"
-        android:text="Time"
+        android:text="Select Time"
         android:textColor="@color/formTxtColour"
         android:textSize="18sp"
         android:textStyle="bold"
