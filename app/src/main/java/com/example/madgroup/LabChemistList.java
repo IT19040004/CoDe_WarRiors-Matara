@@ -10,7 +10,7 @@ import static com.example.madgroup.R.id.listww;
 
 public class LabChemistList extends AppCompatActivity {
 
-    String item[]= new String[] {" 1 Mr.Sahan Rodrigo  Durdans Hospital Laboratory"," 2 Ms.Ashani Chathurika Asiri Hospital"," 3 Mr.Ananda Sampath  Good Health Laboratory"};
+    String item[]= new String[] {" 1 Mr.Sahan Rodrigo  Matara Durdans Hospital Laboratory"," 2 Ms.Ashani Chathurika Galle Asiri Hospital"," 3 Mr.Ananda Sampath  Kandy Good Health Laboratory"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
